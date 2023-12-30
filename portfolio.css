@@ -1,0 +1,1666 @@
+* {
+  font-family: arial;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+
+
+/*logo*/
+header > div img {
+  width: 40px;
+  border-radius: 20px;
+}
+
+header > div p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+header > div span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: none;
+  color: white;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.web-name {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.web-name-span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ol li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ol li:last-child {
+  margin-right: 0;
+}
+
+nav ol li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ol li a::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: #FF6B0D;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ol li a:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    background-color: rgb(245, 196, 105);
+    align-items: center;
+  }
+
+  header div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  header > div img {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 4px;
+  }
+}
+
+
+
+
+/*hero*/
+.hero-bar  {
+  background: linear-gradient(rgba(243, 168, 30, 0.8), rgba(243, 168, 30, 0.8)),url(Images/Digital\ Printing.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+div > h1 {
+  color: white;
+  font-size: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+}
+
+
+
+
+
+/*Portfolio*/
+.main-portfolio {
+  margin: 72px 0px 0px 0px;
+  padding: 24px 0px 72px 0px;
+  background-color: rgb(250, 244, 220);
+}
+
+.portfolio-header {
+  margin: 200px 0px 0px 72px;
+  padding: 0px 0px 0px 24px;
+  font-size: 1.8rem;
+  border-left: 20px solid orangered;
+}
+
+figcaption {
+  width: 280px;
+  padding: 16px 0px;
+  text-align: center;
+  background-color: white;
+  transition: 0.5s;
+}
+
+figcaption:hover {
+  color: white;
+  font-weight: bold;
+  background-color: orange;
+}
+
+
+
+
+
+/*Business card portfolio*/
+.business-card-main-div {
+  display: grid;
+  padding: 40px 72px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.business-card-caption {
+  border-left: 20px dotted rgb(255, 132, 0);
+  padding-left: 20px;
+  font-family: serif;
+  font-size: 1.5rem;
+  margin: 72px 0px 24px 72px;
+}
+
+.business-card-div {
+  width: 280px;
+  background-color: white;
+  border: 1px solid rgb(199, 197, 197);
+}
+
+.business-card {
+  width: 280px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.business-card:hover {
+  opacity: 1;
+}
+
+
+
+@media (max-width: 600px) {
+  .main-portfolio {
+    margin: 72px 0px 0px 0px;
+    padding: 24px 0px 80px 0px;
+    background-color: rgb(250, 244, 220);
+  }
+
+  .business-card-main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    column-gap: 16px;
+    padding: 0px;
+  }
+
+  .business-card-div {
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    width: 250px;
+    margin: 0px auto;
+  }
+
+  .business-card {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.4rem;
+    border: none;
+  }
+
+  .business-card-caption {
+    border-left: 15px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.2rem;
+    margin: 0px 0px 24px 56px;
+  }
+
+  figcaption {
+    width: 250px;
+    padding: 16px 0px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  figcaption:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .main-portfolio {
+    margin: 72px 0px 0px 0px;
+    padding: 24px 40px 80px 40px;
+    background-color: rgb(250, 244, 220);
+  }
+
+  .business-card-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .business-card-div {
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    width: 250px;
+  }
+
+  .business-card {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    border: none;
+  }
+
+  .business-card-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  figcaption {
+    width: 250px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  figcaption:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .main-portfolio {
+    margin: 72px 0px 0px 0px;
+    padding: 24px 50px 80px 50px;
+    background-color: rgb(250, 244, 220);
+  }
+
+  .business-card-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+    padding: 0px;
+  }
+
+  .business-card-div {
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    width: 320px;
+  }
+
+  .business-card {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.7rem;
+    border: none;
+  }
+
+  .business-card-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  figcaption {
+    width: 320px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  figcaption:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .main-portfolio {
+    margin: 72px 0px 0px 0px;
+    padding: 24px 16px 80px 16px;
+    background-color: rgb(250, 244, 220);
+  }
+
+  .business-card-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .business-card-div {
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    width: 300px;
+  }
+
+  .business-card {
+    width: 300px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+  }
+
+  .business-card-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  figcaption {
+    width: 300px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  figcaption:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .main-portfolio {
+    margin: 72px 0px 0px 0px;
+    padding: 24px 48px 80px 48px;
+    background-color: rgb(250, 244, 220);
+  }
+
+  .business-card-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    padding: 0px;
+  }
+
+  .business-card-div {
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    width: 320px;
+  }
+
+  .business-card {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+  }
+
+  .business-card-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  figcaption {
+    width: 320px;
+    padding: 16px 0px;
+    text-align: center;
+    background-color: white;
+    transition: all 0.5s;
+  }
+  
+  figcaption:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+  }
+}
+
+
+
+
+
+/*Flyer Portfolio*/
+.flyer-main-div {
+  display: grid;
+  padding: 40px 72px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.flyer-div {
+  width: 280px;
+  background-color: white;
+  border: 1px solid rgb(199, 197, 197);
+}
+
+.flyer-caption {
+  border-left: 20px dotted rgb(255, 132, 0);
+  padding-left: 20px;
+  font-family: serif;
+  font-size: 1.5rem;
+  margin: 72px 0px 24px 72px;
+}
+
+.flyer {
+  width: 280px;
+  opacity: 0.5;
+  transition: all 0.5s ease;
+}
+
+.flyer:hover {
+  opacity: 1;
+}
+
+
+
+@media (max-width: 600px) {
+  .flyer-main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .flyer-div {
+    width: 250px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    margin: 0px auto;
+  }
+
+  .flyer {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .flyer-caption {
+    border-left: 15px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.2rem;
+    margin: 72px 0px 24px 56px;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .flyer-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .flyer-div {
+    width: 250px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .flyer {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .flyer-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .flyer-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+    padding: 0px;
+  }
+
+  .flyer-div {
+    width: 320px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .flyer {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .flyer-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .flyer-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .flyer-div {
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .flyer {
+    width: 300px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .flyer-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .flyer-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    padding: 0px;
+  }
+
+  .flyer-div {
+    width: 320px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .flyer {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .flyer-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+}
+
+
+
+
+
+/*Banner Portfolio*/
+.banner-main-div {
+  display: grid;
+  padding: 40px 72px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.banner-div {
+  width: 280px;
+  background-color: white;
+  border: 1px solid rgb(199, 197, 197);
+}
+
+.banner-caption {
+  border-left: 20px dotted rgb(255, 132, 0);
+  padding-left: 20px;
+  font-family: serif;
+  font-size: 1.5rem;
+  margin: 72px 0px 24px 72px;
+}
+
+.banner {
+  width: 280px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.banner:hover {
+  opacity: 1;
+}
+
+.portfolio-btn {
+  text-align: center;
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  margin: 48px 0px;
+  transform: translate(-50%,-50%);
+}
+
+.portfolio-btn > a {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: orange;
+  margin-top: 40px;
+  padding: 8px 24px;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 0.4s;
+}
+
+.portfolio-btn > a:hover {
+  box-shadow: 0px 5px 5px rgb(216, 141, 2);
+}
+
+.portfolio-btn > a:active {
+  box-shadow: none;
+  transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 600px) {
+  .banner-main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .banner-div {
+    width: 250px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+    margin: 0px auto;
+  }
+
+  .banner {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .banner-caption {
+    border-left: 15px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.2rem;
+    margin: 72px 0px 24px 56px;
+  }
+
+  .portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+  }
+  
+  .portfolio-btn > a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1.5px solid orange;
+    padding: 8px 16px;
+    font-size: 15px;
+    color: orangered;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-btn > a:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .banner-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .banner-div {
+    width: 250px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .banner {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .banner-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  .portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+  }
+  
+  .portfolio-btn > a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orange;
+    padding: 8px 16px;
+    color: orangered;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-btn > a:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .banner-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 32px;
+    padding: 0px;
+  }
+
+  .banner-div {
+    width: 320px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .banner {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .banner-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  .portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+  }
+  
+  .portfolio-btn > a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orange;
+    padding: 8px 16px;
+    color: orangered;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-btn > a:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .banner-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 24px;
+    padding: 0px;
+  }
+
+  .banner-div {
+    width: 300px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .banner {
+    width: 300px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .banner-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  .portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+  }
+  
+  .portfolio-btn > a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orange;
+    padding: 8px 16px;
+    color: orangered;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-btn > a:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  .banner-main-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    padding: 0px;
+  }
+
+  .banner-div {
+    width: 320px;
+    margin-bottom: 16px;
+    background-color: white;
+    border: 1px solid rgb(199, 197, 197);
+  }
+
+  .banner {
+    width: 320px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+  }
+
+  .banner-caption {
+    border-left: 20px dotted rgb(255, 132, 0);
+    padding-left: 20px;
+    font-family: serif;
+    font-size: 1.5rem;
+    margin: 72px 0px 24px 0px;
+  }
+
+  .portfolio-btn {
+    text-align: center;
+    margin-top: 56px;
+  }
+  
+  .portfolio-btn > a {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid orange;
+    padding: 8px 16px;
+    color: orangered;
+    transition: all 0.5s;
+  }
+  
+  .portfolio-btn > a:hover {
+    background-color: orange;
+    color: white;
+    border: 2px solid orange;
+  }
+}
+
+
+
+
+
+/*footer*/
+footer {
+  background-color: #805300;
+  height: 200px;
+  padding: 72px 168px 72px 168px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 40px;
+}
+
+footer > div p {
+  color: rgb(227, 206, 156);
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+footer > div a {
+  color: rgb(195, 174, 125);
+  font-family: verdana;
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+footer > div a:hover {
+  text-decoration: underline;
+  color: rgb(234, 216, 175);
+}
+
+footer > div address {
+  color: rgb(195, 174, 125);
+  margin-bottom: 16px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.logo-text > img {
+  width: 20px;
+  background-color: rgb(250, 224, 174);
+  margin-right: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.logo-text > span {
+  color: rgb(195, 174, 125);
+  font-family: verdana;
+  transition: all 0.5s;
+}
+
+.logo-text > span:hover {
+  color: rgb(234, 216, 175);
+  text-decoration: underline;
+}
+
+.social-media > a {
+  display: inline-block;
+  background-color: rgb(250, 224, 174);
+  padding: 4px;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.social-media > form input {
+  font-size: 15px;
+  padding: 6px 18px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline: none;
+}
+
+.social-media > form input:focus {
+  outline: 2px solid orange;
+}
+
+.social-media > form button {
+  background-color: orange;
+  border: none;
+  color: white;
+  margin-top: 4px;
+  font-size: 16px;
+  padding: 6px 28px;
+  transition: all 0.5s;
+}
+
+.social-media > form button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.copyright {
+  color: rgb(195, 174, 125);
+  padding: 0px 0px 32px 168px;
+  background-color: #805300;
+}
+
+
+
+@media (max-width: 600px) {
+  footer {
+    background-color: #805300;
+    height: 600px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 16px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  footer {
+    background-color: #805300;
+    height: 400px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 0px 0px 32px 168px;
+    background-color: #805300;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  footer {
+    background-color: #805300;
+    height: 400px;
+    display: grid;
+    padding: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  footer {
+    background-color: #805300;
+    height: 200px;
+    display: grid;
+    padding: 64px 133px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+    border: none;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  footer {
+    background-color: #805300;
+    height: 200px;
+    display: grid;
+    padding: 64px 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  footer > div p {
+    color: rgb(227, 206, 156);
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  
+  footer > div a {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+  }
+  
+  footer > div a:hover {
+    text-decoration: underline;
+    color: rgb(234, 216, 175);
+  }
+  
+  footer > div address {
+    color: rgb(195, 174, 125);
+    margin-bottom: 16px;
+  }
+  
+  .logo-text {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .logo-text > img {
+    width: 20px;
+    background-color: rgb(250, 224, 174);
+    margin-right: 16px;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  
+  .logo-text > span {
+    color: rgb(195, 174, 125);
+    font-family: verdana;
+  }
+  
+  .logo-text > span:hover {
+    color: rgb(234, 216, 175);
+    text-decoration: underline;
+  }
+  
+  .social-media > a {
+    display: inline-block;
+    background-color: rgb(250, 224, 174);
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .social-media > form input {
+    font-size: 15px;
+    padding: 6px 18px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .social-media > form input:focus {
+    outline: 2px solid orange;
+  }
+  
+  .social-media > form button {
+    background-color: orange;
+    border: none;
+    color: white;
+    margin-top: 4px;
+    font-size: 16px;
+    padding: 6px 28px;
+    transition: all 0.5s;
+  }
+  
+  .social-media > form button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .copyright {
+    color: rgb(195, 174, 125);
+    padding: 32px 0px;
+    background-color: #805300;
+    text-align: center;
+  }
+}
